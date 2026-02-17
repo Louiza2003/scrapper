@@ -1,3 +1,6 @@
+# Ignore data folder
+data/
+automation-profile
 # Logs
 logs
 *.log
