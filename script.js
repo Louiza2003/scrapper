@@ -56,7 +56,7 @@ const fs = require("fs");
       allConnectFourPosts.push(...newPosts);
       console.log(allConnectFourPosts);
       fs.writeFileSync(
-         "connect-four-results.json",
+         "./connect-four-results.json",
          JSON.stringify(allConnectFourPosts, null, 2),
          "utf-8"
       );
