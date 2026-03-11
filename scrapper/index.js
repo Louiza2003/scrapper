@@ -1,14 +1,12 @@
 const express = require('express');
 const app = express();
-const scrapRoute = require('./scrapRoute'); // notre route scrapper
-const PORT = 3000;
+const scrapRoute = require('./scrapRoute');
 
-// Pour servir le frontend
+const PORT = 4000; // ✅ IMPORTANT
+
 app.use(express.static('../Connect4'));
-
-// Utiliser la route pour le scrapping
 app.use('/', scrapRoute);
 
 app.listen(PORT, () => {
-  console.log(`Serveur lancé sur http://localhost:${PORT}`);
+  console.log(`Scrapper lancé sur http://localhost:${PORT}`);
 });
